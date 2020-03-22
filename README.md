@@ -24,11 +24,11 @@ Windows GPU Miner 2
 
 ### BASIC SETUP  (needs Node 8.10)
 1. npm install -g node-gyp
-1.1. sudo apt-get install build-essential
+- 1.1. sudo apt-get install build-essential
 
-You may need to do.. (depending on operating system and python version)
-1.2.sudo apt-get install python2.7
-1.3.npm config set python python2.7
+You may need also to do.. (depending on operating system and python version)
+- 1.2. sudo apt-get install python2.7
+- 1.3. npm config set python python2.7
 
 2. npm install
 
@@ -41,8 +41,11 @@ You may need to do.. (depending on operating system and python version)
 6. Deploy two contracts (see the section below) and add their addresses to app/assets/contracts/DeployedContractInfo.json
 
 7. Edit the website files in /app  to change the look of the website (optional)
+
 8. Install mongodb, make sure it is running as a daemon service
+
 9. 'npm run webpack'  #(to build the website files)
+
 10. 'npm run server' #(or 'npm run server test 'for Ropsten test mode)
 
 
@@ -69,20 +72,19 @@ var poolconfig = {
 ```
 
 ## Deploying Contracts
-####     [found in app/assets/contracts/deployedContractInfo.json]
-EDIT THIS FILE!!!
+
+Contracts are found in app/assets/contracts/deployedContractInfo.json
 
 * Replace 'mintforwarder' address with your own deployed version of the contract !!!
-* Replace 'batch payments' contract address as well !!! your own deployed contract !!
+* Replace 'batch payments' contract address as well with your own deployed contract !!
 
 Here are examples of these contracts to copy and paste the code and deploy using https://remix.ethereum.org:
 
-Mint Helper (Mint Forwarder) Contract Code:
+* Mint Helper (Mint Forwarder) Contract Code:
 https://etherscan.io/address/0xeabe48908503b7efb090f35595fb8d1a4d55bd66#code
 
-Batched Payments Contract Code:
+* Batched Payments Contract Code:
 https://etherscan.io/address/0xebf6245689194a6e43096551567827c6726ede0b#code
-
 
 ## HOW TO TEST
 1. Point a EIP918 tokenminer (https://github.com/0xbitcoin/0xbitcoin-miner) at your pool using http://localhost:8080   (make sure firewall allows this port)
