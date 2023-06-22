@@ -1,6 +1,6 @@
 
-var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/v3/244edbea5c684f28abebcff483b9a8b9';
-var INFURA_MAINNET_URL = 'https://mainnet.infura.io/v3/244edbea5c684f28abebcff483b9a8b9';
+var INFURA_ROPSTEN_URL = 'https://sepolia.infura.io/v3/61f00cd767d84144b9d6f71018be6db9';
+var INFURA_MAINNET_URL = 'https://sepolia.infura.io/v3/61f00cd767d84144b9d6f71018be6db9';
 
 const poolConfig = require('../pool.config').config;
 var accountConfig = require('../test.account.config').accounts;
@@ -58,7 +58,7 @@ describe('Peer Interface', function() {
        console.error(e)
      }
 
-      var minerEthAddress = '0xB11ca87E32075817C82Cc471994943a4290f4a14'
+      var minerEthAddress = '0xc371F29852edfdA197B0C74eB7F3444F3cC2F8b0'
 
 
       for(var i=0;i<NUM_PAYMENTS;i++)
